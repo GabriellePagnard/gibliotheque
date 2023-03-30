@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap');
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  background-color: #F0F2F5;
+}
+
+a {
+  color: #2900ce;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #000158;
+}
+
+.content{
+  width: 100vw;
+  padding: 10px 50px;
+}
+.banner-menu{
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.img{
+  height: 100px;
+}
+
+.search{
+  color: black;
+  border-radius: 10px;
+}
+.content {
+  padding: 1rem;
+}
+
+.content-title {
+  margin: 1rem;
+  font-size: 2.5em;
+  font-weight: 300;
+  font-family: 'Alkatra', cursive;
+}
+
+.textetype{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border:  rgba(0, 0, 0,0.6) 1px solid;
+  box-shadow: rgba(0, 0, 0,0.25) 5px 5px 10px;
+  border-radius: 5px;
+  width: 32%;
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.05);
+background-color: #e4eaee; }
+
+.card-meta {
+  font-style: italic;
+}
+
+.card-img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-action {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.post {
+  padding: 1rem;
+  max-width: 40em;
+  margin: 0 auto 2rem;
+}
+
+.post-meta {
+  font-style: italic;
+}
+
+.post-picture {
+  margin: 2rem 0;
+}
+
+.post-content {
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+.post-picture-caption {
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
+.pure-g [class*=pure-u] {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.pure-menu-item {
+  font-size: 1.25em;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.pure-menu-link {
+  color: rgb(80, 80, 80);
+}
+
+.pure-menu-item:last-child {
+  border: none;
+}
+
+.pure-button {
+  background-color: #868585;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.pure-button:hover {
+  background-color: #474747;
+  color: white;
+}
+
+@media screen and (min-width: 48em) {
+  .banner {
+    min-height: 100vh;
+  }
+
+  .banner-logo {
+    width: 6em;
+  }
+}

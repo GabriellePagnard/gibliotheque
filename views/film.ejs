@@ -1,0 +1,34 @@
+<%- include('partials/header'); %>
+        <div class="pure-g">
+          <article class="post pure-u-1">
+            <header>
+              <h1><%=foundFilm.title%></h1>
+            </header>
+            <figure class="post-picture">
+              <img class="pure-img" src="<%=foundFilm.image_src%>" >
+            </figure>
+            <div class="post-content textetype">
+              <p>Réalisateur :</p>
+            </div>
+              <div class="post-content">
+              <p><%=foundFilm.director%></p>
+              </div>
+              <div class="post-content textetype">
+                <p>Année de sortie :</p>
+              </div>
+            <div class="post-content">
+              <p><%=foundFilm.release_date%></p>
+            </div>
+            <div class="post-content textetype">
+              <p>Durée :</p>
+            </div>
+            <div class="post-content">
+              <p><%=foundFilm.duration%></p>
+            </div>
+            <div class="post-content textetype">
+              <p>Description :</p>
+            </div>
+            <div class="post-content">
+              <p><%=foundFilm.description%></p>
+            </div>
+<%- include('partials/footer'); %>

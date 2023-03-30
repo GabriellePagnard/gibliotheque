@@ -1,0 +1,25 @@
+<%- include('partials/header'); %>
+
+        <div style="gap:20px"class="pure-g">
+          <%films.forEach(films => {%>
+          <article class="card pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3 grow"  style="cursor:pointer" onclick="window.location.href='/films/<%=films.id%>'">
+            <header>
+              <img class="card-img pure-img" src="<%=films.banner_src%>">
+              <h2><%=films.title%></h2>
+            </header>
+            <p>
+              <% let description = films.description.split(' ')%>
+              <% let result = ''%>
+              <% description.forEach(function (mot, placeDuMot) {%>
+                <%if (placeDuMot<30){result= result + ' ' + mot  }%>
+              <%});%>
+              <%=result%>
+            </p>
+          </article>
+         <%})%>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
